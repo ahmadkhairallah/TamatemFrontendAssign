@@ -9,7 +9,7 @@ const Login = () => {
     setState((prevState) => {
       return { ...prevState, [e.target.name]: e.target.value };
     });
-    if (e.target.name == "email") {
+    if (e.target.name === "email") {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       // Check if the entered email matches the regular expression
       setIsEmailValid(emailRegex.test(e.target.value));
@@ -39,6 +39,7 @@ const Login = () => {
       <img
         src="https://avatars.githubusercontent.com/u/124091983"
         className="CenteredLogo"
+        alt="Logo"
       />
       <div className={isEmailValid ? "InputDiv" : "InputDiv error"}>
         <TextField
