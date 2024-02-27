@@ -1,0 +1,104 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #efefef;
+  background-color: #efefef !important;
+}
+.GlobalBG {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+.whiteContainer {
+  margin-top: 65px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px #00000029;
+  max-width: 768px;
+  height: calc(100vh - 130px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginFixedConatiner {
+  width: 328px;
+  text-align: center;
+}
+.CenteredLogo {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+.InputDiv {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.InputDiv.error {
+  margin-bottom: 26px;
+}
+.inputTextField {
+  height: 56px;
+  width: 100%;
+}
+
+.inputTextField .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root.Mui-error {
+  color: #b00020 !important;
+}
+.inputTextField .css-1wc848c-MuiFormHelperText-root.Mui-error {
+  color: #b00020;
+  font-size: 12px;
+  padding-left: 16.5px;
+}
+.inputTextField .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #0000001f !important;
+}
+.inputTextField
+  .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-error
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #b00020 !important;
+  width: 100%;
+}
+.inputTextField .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: #b00020 !important;
+}
+.inputTextField input {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #000000bc !important;
+}
+.RedButton {
+  width: 98px !important;
+  background-color: #c3001e !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.RedButton:disabled {
+  background-color: #c3001e !important;
+  color: #fff !important;
+  opacity: 0.6;
+}
+.buttonDiv {
+  width: 100%;
+  text-align: right;
+}
+@media (max-width: 992px) {
+  .GlobalBG {
+    padding: 15 15px;
+    align-items: center;
+  }
+  .whiteContainer {
+    max-width: fit-content;
+    height: 100%;
+    width: 100%;
+    padding: 21px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .LoginFixedConatiner {
+    width: 290px;
+  }
+}
